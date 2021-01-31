@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	$('#sendMail').submit(function(event){
 		event.preventDefault();
-		alert("Se hizo click");
 		var $form = $( this ),
     username = $form.find("#username").val(),
   	email = $form.find("#email").val(),
