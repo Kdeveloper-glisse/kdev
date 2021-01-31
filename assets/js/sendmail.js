@@ -1,18 +1,22 @@
 $(document).ready(function(){
-	var username = document.querySelector("#username").value;
-  var email = document.querySelector("#email").value;
-  var subject = document.querySelector("#subject").value;
-	var message = document.querySelector("#message").value;
-	
-	$('#btnSendMail').click(function(){
-		$.post("https://kdev-app.herokuapp.com/sendmail"),
+	$('#sendMail').submit(function(event){
+		event.preventDefault();
+		alert("Se hizo click");
+		var $form = $( this ),
+    username = $form.find("#username").val(),
+  	email = $form.find("#email").val(),
+  	subject = $form.find("#subject").val(),
+		message = $form.find("#message").val();
+    url = "https://kdev-app.herokuapp.com/sendmail";
+		var sendmail = $.post(url,
 		{
 			username: username,
 			sender: email,
 			subject: subject,
 			body: message
-		}, function(data, status){
-			alert("Data: " + data + "\nStatus: " + status);
-		}
-	})
+		});
+		sendmail.done(function(data) {
+			alert("Mensaje enviado");
+		});
+	});
 });
