@@ -14,7 +14,7 @@ $(document).ready(function() {
       body: message
     };
     
-    var url = 'http://127.0.0.1:5000/sendmail';
+    var url = 'https://kdev-app.herokuapp.com/sendmail';
     $('#result').html('<div style="color:#98c593"><br/>Enviando mensaje, espere por favor...</div>');
  
     $.ajax({
