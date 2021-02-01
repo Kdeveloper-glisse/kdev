@@ -22,6 +22,7 @@ $(document).ready(function() {
       type: 'POST',
       crossDomain: true,
       dataType:'json',
+      data: data,
       headers: {  'Access-Control-Allow-Origin': '*' },
       success: function(jsondata){
         $('#result').html('<div style="color:#98c593">'+jsondata.message+'</div>');
