@@ -26,6 +26,7 @@ $(document).ready(function() {
       headers: {  'Access-Control-Allow-Origin': '*' },
       success: function(jsondata){
         $('#result').html('<div style="color:#98c593">'+jsondata.message+'</div>');
+        $form[0].reset();
       },
       error:function(xhr,status,error){
         alert(status);
