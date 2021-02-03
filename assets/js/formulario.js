@@ -1,7 +1,23 @@
 $(document).ready(function() {
-  $('#sendMail').submit(function (event) {
-    event.preventDefault();
-    var $form = $(this),
+  $('#formulario').submit(function (event) {
+    
+  });
+
+  $("#formulario").validate({
+    errorClass: "state-error",
+    validClass: "state-success",
+    errorElement: "em",
+    highlight: function (element, errorClass, validClass) {
+        $(element).closest('.field').addClass(errorClass).removeClass(validClass);
+    },
+    unhighlight: function (element, errorClass, validClass) {
+        $(element).closest('.field').removeClass(errorClass).addClass(validClass);
+    },
+    errorPlacement: function (error, element) {
+      error.insertAfter(element.parent());
+    },
+    submitHandler: function(form) {
+     var $form = $(this),
       username = $form.find('#username').val(),
       email = $form.find('#email').val(),
       subject = $form.find('#subject').val(),
@@ -32,5 +48,7 @@ $(document).ready(function() {
         alert(status);
       }
     });
-  });
+    }
+
+});
 });

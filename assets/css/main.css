@@ -2307,3 +2307,284 @@ input, select, textarea {
 			}
 
 		}
+
+		/* Validate */
+
+		#formulario .field {
+			display: block;
+			position: relative
+		}
+
+		#formulario .slider-group:after,#formulario .fields:after {
+			clear: both
+		}
+		
+		#formulario .fields .colm {
+			min-height: 1px;
+			padding: 10px;
+			position: relative;
+			float: left
+		}
+		
+		#formulario .fields .colm1 {
+			width: 8.33%
+		}
+		
+		#formulario .fields .colm2 {
+			width: 16.66%
+		}
+		
+		#formulario .fields .colm3 {
+			width: 25%
+		}
+		
+		#formulario .fields .colm4 {
+			width: 33.33%
+		}
+		
+		#formulario .fields .colm5 {
+			width: 41.66%
+		}
+		
+		#formulario .fields .colm6 {
+			width: 50%
+		}
+		
+		#formulario .fields .colm7 {
+			width: 58.33%
+		}
+		
+		#formulario .fields .colm8 {
+			width: 66.66%
+		}
+		
+		#formulario .fields .colm9 {
+			width: 75%
+		}
+		
+		#formulario .fields .colm10 {
+			width: 83.33%
+		}
+		
+		#formulario .fields .colm11 {
+			width: 91.66%
+		}
+		
+		#formulario .fields .colm12 {
+			width: 100%
+		}
+
+		#formulario .fields:before, #formulario .fields:after {
+			display: table;
+			content: "";
+			line-height: 0;
+		}
+		#formulario .gui-input, #formulario .gui-textarea {
+			-webkit-tap-highlight-color: transparent;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none
+		}
+
+		#formulario .gui-input, #formulario .gui-textarea {
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-ms-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-o-border-radius: 3px;
+			border-radius: 3px;
+			outline: none
+		}
+
+		#formulario .gui-input,#formulario .gui-textarea {
+			background: #fff;
+			position: relative;
+			vertical-align: top;
+			border: 2px solid #BDC3C7;
+			display: -moz-inline-stack;
+			display: inline-block;
+			*display: inline;
+			color: #34495E;
+			outline: none;
+			height: 42px;
+			width: 100%;
+			*zoom:1
+		}
+
+		#formulario .gui-input,#formulario .gui-textarea {
+			padding: 10px
+		}
+
+		#formulario .gui-textarea {
+			resize: none;
+			line-height: 19px;
+			overflow: auto;
+			max-width: 100%;
+			height: 96px
+		}
+
+		#formulario .gui-input:hover, #formulario .gui-textarea:hover {
+			border-color:#98c593
+		}
+
+		#formulario .gui-input:focus, #formulario .gui-textarea:focus {
+			border-color: #98c593;
+			color: #3C3C3C
+		}
+
+		#formulario .gui-input:focus + .tooltip, #formulario .gui-textarea:focus + .tooltip {
+			opacity: 1;
+			z-index: 999
+		}
+		#formulario .tip-left {
+			top: 1px;
+			margin-right: -20px
+		}
+		
+		#formulario .tip-left:after {
+			top: 12px;
+			left: 100%;
+			border-left: 8px solid #34495E;
+			border-top: 8px solid transparent;
+			border-bottom: 8px solid transparent
+		}
+		
+		#formulario .gui-input:focus + .tip-left, #formulario .gui-textarea:focus + .tip-left {
+			margin-right: 5px;
+			right: 100%;
+			left: auto
+		}
+		
+		#formulario .tip-right {
+			top: 1px;
+			margin-left: -20px
+		}
+		
+		#formulario .tip-right:after {
+			top: 12px;
+			right: 100%;
+			border-right: 8px solid #34495E;
+			border-top: 8px solid transparent;
+			border-bottom: 8px solid transparent
+		}
+		
+		#formulario .gui-input:focus + .tip-right, #formulario .gui-textarea:focus + .tip-right {
+			left: 100%;
+			margin-left: 5px
+		}
+		
+		#formulario .tip-right-top {
+			bottom: 100%;
+			margin-bottom: -20px
+		}
+		
+		#formulario .tip-right-top:after {
+			top: 100%;
+			right: 12px;
+			border-top: 8px solid #34495E;
+			border-right: 8px solid transparent;
+			border-left: 8px solid transparent
+		}
+		
+		#formulario .gui-input:focus + .tip-right-top, #formulario .gui-textarea:focus + .tip-right-top {
+			right: 0;
+			left: auto;
+			margin-bottom: 10px
+		}
+		
+		#formulario .option .tooltip,#formulario .tip-left-top {
+			bottom: 100%;
+			margin-bottom: -20px
+		}
+		
+		#formulario .option .tooltip:after,#formulario .tip-left-top:after {
+			top: 100%;
+			left: 12px;
+			border-top: 8px solid #34495E;
+			border-right: 8px solid transparent;
+			border-left: 8px solid transparent
+		}
+		
+		#formulario .option:hover .tooltip,#formulario .gui-input:focus + .tip-left-top,#formulario .gui-textarea:focus + .tip-left-top {
+			left: 0;
+			right: auto;
+			margin-bottom: 10px
+		}
+		
+		#formulario .option:hover .tooltip {
+			left: -10px
+		}
+		
+		#formulario .tip-right-bottom {
+			top: 100%;
+			margin-top: -20px
+		}
+		
+		#formulario .tip-right-bottom:after {
+			right: 12px;
+			bottom: 100%;
+			border-bottom: 8px solid #34495E;
+			border-right: 8px solid transparent;
+			border-left: 8px solid transparent
+		}
+		
+		#formulario .gui-input:focus + .tip-right-bottom,#formulario .gui-textarea:focus + .tip-right-bottom {
+			margin-top: 10px;
+			left: auto;
+			right: 0
+		}
+		
+		#formulario .tip-left-bottom {
+			top: 100%;
+			margin-top: -20px
+		}
+		
+		#formulario .tip-left-bottom:after {
+			left: 12px;
+			bottom: 100%;
+			border-bottom: 8px solid #34495E;
+			border-right: 8px solid transparent;
+			border-left: 8px solid transparent
+		}
+		
+		#formulario .gui-input:focus + .tip-left-bottom,#formulario .gui-textarea:focus + .tip-left-bottom {
+			margin-top: 10px;
+			right: auto;
+			left: 0
+		}
+		
+		#formulario .state-error .gui-input, #formulario .state-error .gui-textarea {
+			background: #FEEFE9;
+			border-color: #E46B66
+		}
+
+		#formulario .state-error + em {
+			display: block!important;
+			float: left;
+			margin-top: 6px;
+			padding: 0 3px;
+			font-family: Arial,Helvetica,sans-serif;
+			font-style: normal;
+			line-height: normal;
+			color: #C00;
+			font-size: .85em
+		}
+
+		#formulario .state-success .gui-input, #formulario .state-success .gui-textarea {
+			background: #EAFCD8;
+			border-color: #98c593;
+		}
+
+		#formulario .gui-input[disabled], #formulario .gui-textarea[disabled] {
+			background-color: #f4f6f6;
+			border-color: #d5dbdb!important;
+			cursor: default;
+			color: #d5dbdb;
+			opacity: .7
+		}
